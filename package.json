@@ -1,0 +1,9 @@
+{
+  "name": "stronghold",
+  "version": "1.0.0",
+  "description": "Creating strongholds",
+  "main": "index.js",
+  "repository": "https://github.com/perran/stronghold.git",
+  "author": "perran <hjelmper@gmail.com>",
+  "license": "MIT"
+}
