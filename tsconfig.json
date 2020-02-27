@@ -1,0 +1,16 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "rootDirs": ["src"],
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["dom", "es2020"],
+    "outDir": "ts.out",
+    "strict": true,
+    "noImplicitReturns": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": "."
+  }
+}
