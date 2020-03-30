@@ -7,8 +7,10 @@
   "author": "perran <hjelmper@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "sane": "tsc && yarn lint",
-    "lint": "eslint '**/*.{js,ts}'"
+    "compile": "tsc --noEmit",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet",
+    "lint:fix": "yarn lint --fix",
+    "sane": "yarn compile && yarn lint:fix"
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",
@@ -34,7 +36,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts}": [
+    "*.{js,ts,tsx}": [
       "yarn sane"
     ]
   },
